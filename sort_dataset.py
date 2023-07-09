@@ -64,13 +64,13 @@ if os.path.exists(new_dir + 'statistics.txt'):
 
 # Create a new statistics.txt file
 statistics = open(new_dir + 'statistics.txt', 'w+')
-    # Show statistics for the sorted dataset and write them to the statistics.txt file
-    for key, value in files.items():
-        text = 'Number of ' + key + ' files: ' + str(value['count'])
+# Show statistics for the sorted dataset and write them to the statistics.txt file
+for key, value in files.items():
+    text = 'Number of ' + key + ' files: ' + str(value['count'])
+    statistics.write(text + '\n')
+    print(text)
+    if key != 'all':
+        text = 'Percentage of ' + key + ' files: ' + str(round(value['count'] / files['all']['count'] * 100, 2)) + '%'
         statistics.write(text + '\n')
         print(text)
-        if key != 'all':
-            text = 'Percentage of ' + key + ' files: ' + str(round(value['count'] / files['all']['count'] * 100, 2)) + '%'
-            statistics.write(text + '\n')
-            print(text)
-    statistics.close()
+statistics.close()

@@ -27,8 +27,8 @@ for key, value in files.items():
             os.makedirs(value['dir'])
 
 headers = {
-    'charge': ['Voltage_measured', 'Current_measured', 'Temperature_measured', 'Current_load', 'Voltage_load', 'Time'],
-    'discharge': ['Voltage_measured', 'Current_measured', 'Temperature_measured', 'Current_charge', 'Voltage_charge', 'Time'],
+    'charge': ['Voltage_measured', 'Current_measured', 'Temperature_measured', 'Current_charge', 'Voltage_charge', 'Time'],
+    'discharge': ['Voltage_measured', 'Current_measured', 'Temperature_measured', 'Current_load', 'Voltage_load', 'Time'],
     'impedance': ['Sense_current', 'Battery_current', 'Current_ratio', 'Battery_impedance', 'Rectified_impedance'],
 }
 

@@ -1,8 +1,8 @@
 Number of all files: 7565
-Number of charge files: 2794
-Percentage of charge files: 36.93%
-Number of discharge files: 2815
-Percentage of discharge files: 37.21%
+Number of charge files: 2815
+Percentage of charge files: 37.21%
+Number of discharge files: 2794
+Percentage of discharge files: 36.93%
 Number of impedance files: 1956
 Percentage of impedance files: 25.86%
 Number of error files: 0

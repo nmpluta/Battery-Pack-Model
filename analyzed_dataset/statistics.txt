@@ -1,0 +1,26 @@
+Total number of files copied: 2167
+
+Battery ID: B0005
+Number of files: 616
+Number of charge files: 170
+Number of discharge files: 168
+Number of impedance files: 278
+
+Battery ID: B0006
+Number of files: 616
+Number of charge files: 170
+Number of discharge files: 168
+Number of impedance files: 278
+
+Battery ID: B0007
+Number of files: 616
+Number of charge files: 170
+Number of discharge files: 168
+Number of impedance files: 278
+
+Battery ID: B0018
+Number of files: 319
+Number of charge files: 134
+Number of discharge files: 132
+Number of impedance files: 53
+

@@ -23,8 +23,13 @@ def get_current_ptp(current_timeseries: pd.Index, time_timeseries: pd.Index):
                 load_applied_idxs[0] = i
         elif load_applied_idxs[1] is None:
             if current_timeseries[i] > -0.5:
-                load_applied_idxs[1] = i
+                # get the last index where the load was applied to be consitent with the case
+                # where the load is never disconnected (e.g 04506.csv)
+                load_applied_idxs[1] = i - 1
 
+    # in some time series, the load is never disconnected (e.g 04506.csv), so we need to check for that
+    if load_applied_idxs[1] is None:
+        load_applied_idxs[1] = current_timeseries.size - 1
 
     # the first index in the list will give us the start time and the last one will give us the disconnection time
     start_timestamp = time_timeseries.to_numpy()[load_applied_idxs[0]]

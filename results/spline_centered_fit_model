@@ -1,20 +1,20 @@
 digraph {
 	subgraph cluster12 {
-		beta [label="beta
-~
-Deterministic" shape=box]
 		beta_raw [label="beta_raw
 ~
 Normal"]
+		beta [label="beta
+~
+Deterministic" shape=box]
 		label=12 labeljust=r labelloc=b style=rounded
 	}
 	mu_0 [label="mu_0
 ~
 Flat"]
-	sigma0 [label="sigma0
+	sigma [label="sigma
 ~
 Exponential"]
-	sigma [label="sigma
+	sigma0 [label="sigma0
 ~
 Exponential"]
 	subgraph cluster504 {
@@ -32,9 +32,9 @@ Normal"]
 	mu_0 -> beta
 	beta_raw -> beta
 	sigma0 -> beta
-	beta -> y
 	sigma -> y
+	beta -> y
 	beta -> mu
-	mu -> y_pred
 	sigma -> y_pred
+	mu -> y_pred
 }

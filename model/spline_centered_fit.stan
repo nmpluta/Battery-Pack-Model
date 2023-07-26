@@ -25,8 +25,15 @@ model {
 
 generated quantities {
     vector[L] mu = rep_vector(0, L);            // predicted values
+    vector[L] log_likelihood = rep_vector(0, L);
+
     for (l in 1:L) {
         mu[l] = x[l] * beta;                    // calculate predicted values
     }
+
     real y_pred[L] = normal_rng(mu, sigma);     // simulate y
+
+    for (l in 1:L) {
+        log_likelihood[l] = normal_lpdf(y[l] | mu[l], sigma); // log of likelihood function
+    }
 }

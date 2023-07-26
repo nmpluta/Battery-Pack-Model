@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" modified="2023-07-26T00:34:00.229Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0" etag="AZ_heNqw4sPKogrQ1GXU" version="21.6.5" type="device">
+  <diagram name="Page-1" id="CtRLHm_eFpfdzEm-Z6M2">
+    <mxGraphModel dx="1454" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mJShupWhgvIYPhRq3TGS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-1" target="mJShupWhgvIYPhRq3TGS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-1" target="mJShupWhgvIYPhRq3TGS-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-1" target="mJShupWhgvIYPhRq3TGS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-1" value="NASA battery dataset" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="40" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-2" target="mJShupWhgvIYPhRq3TGS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-2" target="mJShupWhgvIYPhRq3TGS-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-2" value="datasets for battery B0005" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="160" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-3" target="mJShupWhgvIYPhRq3TGS-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-3" target="mJShupWhgvIYPhRq3TGS-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-3" value="datasets for battery B0006" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="160" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-4" target="mJShupWhgvIYPhRq3TGS-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-4" target="mJShupWhgvIYPhRq3TGS-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-4" value="datasets for battery B0007" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565" y="160" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-9" target="mJShupWhgvIYPhRq3TGS-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-9" value="unified dict of discharge data + discharge capacity data per battery" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="530" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-10" target="mJShupWhgvIYPhRq3TGS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-10" value="discharge data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-12" value="discharge capacity after each cycle " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-15" target="mJShupWhgvIYPhRq3TGS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-15" value="discharge data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-16" target="mJShupWhgvIYPhRq3TGS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-16" value="discharge capacity after each cycle " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-18" target="mJShupWhgvIYPhRq3TGS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-18" value="discharge data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mJShupWhgvIYPhRq3TGS-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-19" value="discharge capacity after each cycle " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mJShupWhgvIYPhRq3TGS-32" value="estimation of discharge capacity (or SoC) at a given timepoint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="670" width="360" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

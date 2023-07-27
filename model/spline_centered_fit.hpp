@@ -8,7 +8,7 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 26> locations_array__ = 
+static constexpr std::array<const char*, 31> locations_array__ = 
 {" (found before start of program)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 10, column 4 to column 23)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 11, column 4 to column 24)",
@@ -16,10 +16,14 @@ static constexpr std::array<const char*, 26> locations_array__ =
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 13, column 4 to column 25)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 17, column 4 to column 45)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 27, column 4 to column 36)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 29, column 8 to column 28)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 28, column 19 to line 30, column 5)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 28, column 4 to line 30, column 5)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 31, column 4 to column 43)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 28, column 4 to column 48)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 31, column 8 to column 28)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 30, column 19 to line 32, column 5)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 30, column 4 to line 32, column 5)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 4 to column 43)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 37, column 8 to column 61)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 36, column 19 to line 38, column 5)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 36, column 4 to line 38, column 5)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 21, column 4 to column 28)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 22, column 4 to column 29)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 23, column 4 to column 32)",
@@ -34,7 +38,8 @@ static constexpr std::array<const char*, 26> locations_array__ =
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 10, column 11 to column 12)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 17, column 11 to column 12)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 27, column 11 to column 12)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 31, column 16 to column 17)"};
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 28, column 11 to column 12)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 16 to column 17)"};
 
 
 
@@ -75,41 +80,41 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 14;
+      current_statement__ = 18;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 14;
+      current_statement__ = 18;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 14;
+      current_statement__ = 18;
       stan::math::check_greater_or_equal(function__, "N", N, 0);
-      current_statement__ = 15;
+      current_statement__ = 19;
       context__.validate_dims("data initialization","K","int",
            std::vector<size_t>{});
       K = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 15;
+      current_statement__ = 19;
       K = context__.vals_i("K")[(1 - 1)];
-      current_statement__ = 15;
+      current_statement__ = 19;
       stan::math::check_greater_or_equal(function__, "K", K, 0);
-      current_statement__ = 16;
+      current_statement__ = 20;
       context__.validate_dims("data initialization","L","int",
            std::vector<size_t>{});
       L = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 16;
+      current_statement__ = 20;
       L = context__.vals_i("L")[(1 - 1)];
-      current_statement__ = 16;
+      current_statement__ = 20;
       stan::math::check_greater_or_equal(function__, "L", L, 0);
-      current_statement__ = 17;
+      current_statement__ = 21;
       stan::math::validate_non_negative_index("x", "N", N);
-      current_statement__ = 18;
+      current_statement__ = 22;
       stan::math::validate_non_negative_index("x", "K", K);
-      current_statement__ = 19;
+      current_statement__ = 23;
       context__.validate_dims("data initialization","x","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(K)});
@@ -120,26 +125,26 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       
       {
         std::vector<local_scalar_t__> x_flat__;
-        current_statement__ = 19;
+        current_statement__ = 23;
         x_flat__ = context__.vals_r("x");
-        current_statement__ = 19;
+        current_statement__ = 23;
         pos__ = 1;
-        current_statement__ = 19;
+        current_statement__ = 23;
         for (int sym1__ = 1; sym1__ <= K; ++sym1__) {
-          current_statement__ = 19;
+          current_statement__ = 23;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 19;
+            current_statement__ = 23;
             stan::model::assign(x, x_flat__[(pos__ - 1)],
               "assigning variable x", stan::model::index_uni(sym2__),
                                         stan::model::index_uni(sym1__));
-            current_statement__ = 19;
+            current_statement__ = 23;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 20;
+      current_statement__ = 24;
       stan::math::validate_non_negative_index("y", "N", N);
-      current_statement__ = 21;
+      current_statement__ = 25;
       context__.validate_dims("data initialization","y","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       y__ = 
@@ -149,26 +154,28 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       
       {
         std::vector<local_scalar_t__> y_flat__;
-        current_statement__ = 21;
+        current_statement__ = 25;
         y_flat__ = context__.vals_r("y");
-        current_statement__ = 21;
+        current_statement__ = 25;
         pos__ = 1;
-        current_statement__ = 21;
+        current_statement__ = 25;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 21;
+          current_statement__ = 25;
           stan::model::assign(y, y_flat__[(pos__ - 1)],
             "assigning variable y", stan::model::index_uni(sym1__));
-          current_statement__ = 21;
+          current_statement__ = 25;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 22;
+      current_statement__ = 26;
       stan::math::validate_non_negative_index("beta_raw", "K", K);
-      current_statement__ = 23;
+      current_statement__ = 27;
       stan::math::validate_non_negative_index("beta", "K", K);
-      current_statement__ = 24;
+      current_statement__ = 28;
       stan::math::validate_non_negative_index("mu", "L", L);
-      current_statement__ = 25;
+      current_statement__ = 29;
+      stan::math::validate_non_negative_index("log_likelihood", "L", L);
+      current_statement__ = 30;
       stan::math::validate_non_negative_index("y_pred", "L", L);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -218,11 +225,11 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
         stan::math::add(mu0, stan::math::multiply(sigma0, beta_raw)),
         "assigning variable beta");
       {
-        current_statement__ = 11;
+        current_statement__ = 15;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(beta_raw, 0, 1));
-        current_statement__ = 12;
+        current_statement__ = 16;
         lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.1));
-        current_statement__ = 13;
+        current_statement__ = 17;
         lp_accum__.add(
           stan::math::normal_lpdf<propto__>(y, stan::math::multiply(x, beta),
             sigma));
@@ -304,9 +311,15 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       current_statement__ = 6;
       stan::model::assign(mu, stan::math::rep_vector(0, L),
         "assigning variable mu");
-      current_statement__ = 9;
+      Eigen::Matrix<double, -1, 1> log_likelihood =
+         Eigen::Matrix<double, -1, 1>::Constant(L,
+           std::numeric_limits<double>::quiet_NaN());
+      current_statement__ = 7;
+      stan::model::assign(log_likelihood, stan::math::rep_vector(0, L),
+        "assigning variable log_likelihood");
+      current_statement__ = 10;
       for (int l = 1; l <= L; ++l) {
-        current_statement__ = 7;
+        current_statement__ = 8;
         stan::model::assign(mu,
           stan::math::multiply(
             stan::model::rvalue(x, "x", stan::model::index_uni(l)), beta),
@@ -314,11 +327,21 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       }
       std::vector<double> y_pred =
          std::vector<double>(L, std::numeric_limits<double>::quiet_NaN());
-      current_statement__ = 10;
+      current_statement__ = 11;
       stan::model::assign(y_pred,
         stan::math::normal_rng(mu, sigma, base_rng__),
         "assigning variable y_pred");
+      current_statement__ = 14;
+      for (int l = 1; l <= L; ++l) {
+        current_statement__ = 12;
+        stan::model::assign(log_likelihood,
+          stan::math::normal_lpdf<false>(
+            stan::model::rvalue(y, "y", stan::model::index_uni(l)),
+            stan::model::rvalue(mu, "mu", stan::model::index_uni(l)), sigma),
+          "assigning variable log_likelihood", stan::model::index_uni(l));
+      }
       out__.write(mu);
+      out__.write(log_likelihood);
       out__.write(y_pred);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -364,7 +387,7 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
   inline void get_param_names(std::vector<std::string>& names__) const {
     
     names__ = std::vector<std::string>{"beta_raw", "sigma", "mu0", "sigma0",
-      "beta", "mu", "y_pred"};
+      "beta", "mu", "log_likelihood", "y_pred"};
     
     } // get_param_names() 
     
@@ -375,6 +398,7 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
                                                                    },
       std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
       }, std::vector<size_t>{static_cast<size_t>(K)},
+      std::vector<size_t>{static_cast<size_t>(L)},
       std::vector<size_t>{static_cast<size_t>(L)},
       std::vector<size_t>{static_cast<size_t>(L)}};
     
@@ -406,6 +430,11 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       for (int sym1__ = 1; sym1__ <= L; ++sym1__) {
         {
           param_names__.emplace_back(std::string() + "mu" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= L; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "log_likelihood" + '.' + std::to_string(sym1__));
         } 
       }
       for (int sym1__ = 1; sym1__ <= L; ++sym1__) {
@@ -447,6 +476,11 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
       }
       for (int sym1__ = 1; sym1__ <= L; ++sym1__) {
         {
+          param_names__.emplace_back(std::string() + "log_likelihood" + '.' + std::to_string(sym1__));
+        } 
+      }
+      for (int sym1__ = 1; sym1__ <= L; ++sym1__) {
+        {
           param_names__.emplace_back(std::string() + "y_pred" + '.' + std::to_string(sym1__));
         } 
       }
@@ -456,13 +490,13 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"y_pred\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"log_likelihood\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"y_pred\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"y_pred\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"beta_raw\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma0\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(K) + "},\"block\":\"transformed_parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"log_likelihood\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(L) + "},\"block\":\"generated_quantities\"},{\"name\":\"y_pred\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(L) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -479,7 +513,7 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
   (((K + 1) + 1) + 1);
       const size_t num_transformed = K;
       const size_t num_gen_quantities = 
-  (L + L);
+  ((L + L) + L);
       std::vector<double> vars_vec(num_params__
        + (emit_transformed_parameters * num_transformed)
        + (emit_generated_quantities * num_gen_quantities));
@@ -501,7 +535,7 @@ class spline_centered_fit_model final : public model_base_crtp<spline_centered_f
   (((K + 1) + 1) + 1);
       const size_t num_transformed = K;
       const size_t num_gen_quantities = 
-  (L + L);
+  ((L + L) + L);
       vars.resize(num_params__
         + (emit_transformed_parameters * num_transformed)
         + (emit_generated_quantities * num_gen_quantities));

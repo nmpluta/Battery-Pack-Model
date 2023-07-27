@@ -1,15 +1,24 @@
 digraph {
-	subgraph cluster14 {
-		beta [label="beta
-~
-Normal"]
-		label=14 labeljust=r labelloc=b style=rounded
-	}
 	sigma [label="sigma
 ~
 Exponential"]
+	sigma0 [label="sigma0
+~
+HalfNormal"]
+	mu0 [label="mu0
+~
+Flat"]
+	subgraph cluster12 {
+		beta [label="beta
+~
+Deterministic" shape=box]
+		theta [label="theta
+~
+Normal"]
+		label=12 labeljust=r labelloc=b style=rounded
+	}
 	subgraph cluster504 {
-		y [label="y
+		y_obs [label="y_obs
 ~
 Normal" style=filled]
 		label=504 labeljust=r labelloc=b style=rounded
@@ -23,8 +32,11 @@ Deterministic" shape=box]
 Normal"]
 		label=168 labeljust=r labelloc=b style=rounded
 	}
-	sigma -> y
-	beta -> y
+	sigma0 -> theta
+	mu0 -> theta
+	sigma -> y_obs
+	theta -> y_obs
+	theta -> beta
 	beta -> mu
 	sigma -> y_pred
 	mu -> y_pred

@@ -20,7 +20,7 @@ static constexpr std::array<const char*, 31> locations_array__ =
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 31, column 8 to column 28)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 30, column 19 to line 32, column 5)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 30, column 4 to line 32, column 5)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 4 to column 43)",
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 4 to column 49)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 37, column 8 to column 61)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 36, column 19 to line 38, column 5)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 36, column 4 to line 38, column 5)",
@@ -39,7 +39,7 @@ static constexpr std::array<const char*, 31> locations_array__ =
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 17, column 11 to column 12)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 27, column 11 to column 12)",
  " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 28, column 11 to column 12)",
- " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 16 to column 17)"};
+ " (in '/usr/battery-pack-model-and-data/model/spline_centered_fit.stan', line 34, column 10 to column 11)"};
 
 
 

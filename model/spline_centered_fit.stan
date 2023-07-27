@@ -31,7 +31,7 @@ generated quantities {
         mu[l] = x[l] * beta;                    // calculate predicted values
     }
 
-    real y_pred[L] = normal_rng(mu, sigma);     // simulate y
+    array[L] real y_pred = normal_rng(mu, sigma);     // simulate y
 
     for (l in 1:L) {
         log_likelihood[l] = normal_lpdf(y[l] | mu[l], sigma); // log of likelihood function

@@ -21,13 +21,16 @@ Exponential"]
 		y [label="y
 ~
 Normal" style=filled]
+		label=504 labeljust=r labelloc=b style=rounded
+	}
+	subgraph cluster168 {
 		mu [label="mu
 ~
 Deterministic" shape=box]
 		y_pred [label="y_pred
 ~
 Normal"]
-		label=504 labeljust=r labelloc=b style=rounded
+		label=168 labeljust=r labelloc=b style=rounded
 	}
 	mu_0 -> beta
 	beta_raw -> beta

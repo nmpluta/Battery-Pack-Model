@@ -1,0 +1,43 @@
+digraph {
+	sigma [label="sigma
+~
+Exponential"]
+	sigma0 [label="sigma0
+~
+HalfNormal"]
+	mu0 [label="mu0
+~
+Flat"]
+	subgraph cluster12 {
+		beta [label="beta
+~
+Deterministic" shape=box]
+		theta [label="theta
+~
+Normal"]
+		label=12 labeljust=r labelloc=b style=rounded
+	}
+	subgraph cluster504 {
+		y_obs [label="y_obs
+~
+Normal" style=filled]
+		label=504 labeljust=r labelloc=b style=rounded
+	}
+	subgraph cluster168 {
+		mu [label="mu
+~
+Deterministic" shape=box]
+		y_pred [label="y_pred
+~
+Normal"]
+		label=168 labeljust=r labelloc=b style=rounded
+	}
+	sigma0 -> theta
+	mu0 -> theta
+	sigma -> y_obs
+	theta -> y_obs
+	theta -> beta
+	beta -> mu
+	sigma -> y_pred
+	mu -> y_pred
+}
